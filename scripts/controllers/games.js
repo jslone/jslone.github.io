@@ -30,10 +30,56 @@ angular.module('portfolioApp')
         'images/games/aplugslife/3.png',
         'images/games/aplugslife/4.png'
       ],
-      platforms: {
-        windows: true,
-        mac: true,
-        linux: true
+      builds: [
+        {
+          platform: 'windows',
+          link: 'builds/games/aplugslife/windows.zip',
+          dowload: true
+        },
+        {
+          platform: 'apple',
+          link: 'builds/games/aplugslife/macosx.zip',
+          dowload: true
+        },
+        {
+          platform: 'linux',
+          link: 'builds/games/aplugslife/linux.zip',
+          dowload: true
+        }
+      ],
+      team: {
+        name: 'Badass Bard Games',
+        photo: 'images/games/aplugslife/team.jpg',
+        members: [
+          {
+            name: 'Diana Zhu',
+            role: 'Production, Level Design'
+          },
+          {
+            name: 'Sylvia Kosowski',
+            role: 'Artwork, Character and Object Design'
+          },
+          {
+            name: 'Ivan Wang',
+            role: 'Level Design, Sound Design'
+          },
+          {
+            name: 'Jacob Slone',
+            role: 'Programming, World Building'
+          },
+          {
+            name: 'Cloud Tian',
+            role: 'Music Composition, Sound Design'
+          },
+          {
+            name: 'Jacqueline Myra Yeung',
+            role: 'Design, Tile Design'
+          },
+          {
+            name: 'Wole Idowu',
+            role: 'Asset Pipeline Management, Tile Design'
+          }
+        ]
       }
     }
   ];

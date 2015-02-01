@@ -1,6 +1,5 @@
 <div class="container">
   <div class="row">
-
     <div class="col l12">
       <img-mat src="{{game.header}}">
     </div>
@@ -21,10 +20,45 @@
         <div class="card-content">
           <span class="card-title grey-text text-darken-4">Screenshots</span>
           <div class="row">
-            <div ng-repeat="image in game.screenshots" class="col l3">  
+            <div ng-repeat="image in game.screenshots" class="col l3">
               <img-mat src="{{image}}">
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col l12">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title grey-text text-darken-4">Download</span>
+          <div class="icons grey-text text-darken-4">
+            <a ng-repeat="build in game.builds" href="{{build.link}}" class="grey-text text-darken-4 fa fa-{{build.platform}}"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col l12">
+      <div class="card">
+        <div class="card-content">
+          <span ng-if="!game.team.name" class="card-title grey-text text-darken-4">Team</span>
+          <span ng-if="game.team.name" class="card-title grey-text text-darken-4">Team - {{game.team.name}}</span>
+            <div class="row">
+              <div ng-if="game.team.photo" class="col l12">
+                <img-mat src="{{game.team.photo}}">
+              </div>
+              <div ng-repeat="member in game.team.members" class="col l6">
+                <div class="card">
+                  <div class="card-content">
+                    <span class="card-title grey-text text-darken-4">{{member.name}}</span>
+                    <p>{{member.role}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     </div>

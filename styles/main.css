@@ -10,15 +10,15 @@ html,body {
 }
 
 .icons {
-  color: white;
+  /*color: white;*/
   font-size:2em;
   text-align: center;
   padding-top:0.5em;
   padding-bottom:0.5em;
 }
 
-.icons > a {
-  color: white;
+.icons > * {
+  /*color: white;*/
   margin-left:1em;
   margin-right:1em;
 }
