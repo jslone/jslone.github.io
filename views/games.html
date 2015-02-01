@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div ng-repeat="game in games" class="col s12 m6 l4">
+      <div class="card">
+        <div class="card-image">
+          <img ng-src="{{game.thumbnail}}">
+          <span class="card-title">{{game.name}}</span>
+        </div>
+        <div class="card-content">
+          {{game.description.short || game.description}}
+        </div>
+        <div class="card-action">
+          <a href="#/game/{{$index}}">More info</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

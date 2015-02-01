@@ -32,6 +32,15 @@ angular
         templateUrl: 'views/resume.html',
         css: 'styles/resume.css'
       })
+      .when('/games', {
+        templateUrl: 'views/games.html',
+        controller: 'GamesCtrl'
+      })
+      .when('/game/:id', {
+        templateUrl: 'views/game.html',
+        controller: 'GamesCtrl',
+        css: 'styles/games.css'
+      })
       .otherwise({
         redirectTo: '/'
       });

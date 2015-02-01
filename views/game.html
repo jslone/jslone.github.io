@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+
+    <div class="col l12">
+      <img-mat src="{{game.header}}">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col l12">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title grey-text text-darken-4">Overview</span>
+          <p>{{game.description.long || game.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col l12">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title grey-text text-darken-4">Screenshots</span>
+          <div class="row">
+            <div ng-repeat="image in game.screenshots" class="col l3">  
+              <img-mat src="{{image}}">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

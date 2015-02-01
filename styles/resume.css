@@ -1,4 +1,8 @@
-.page {
+.resume {
+  margin-top:1em;
+}
+
+.resume .page {
   width: 8.5in;
   height: 11in;
   background-color:white;
@@ -6,16 +10,17 @@
   overflow: hidden;
 }
 
-.container {
-  margin-top:1em;
-}
-
-.flex {
+.resume .flex-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-content: flex-start;
+}
+
+.resume .flex-apart {
+  display: flex;
+  justify-content: space-between;
 }
 
 .third > * {
@@ -28,17 +33,6 @@
 
 .quarter > * {
   width:25%;
-}
-
-.inline-full {
-  display: table;
-  width: 100%;
-}
-
-.inline > div, .inline-full > div {
-  display: inline-table;
-  max-width:3.5in;
-  padding:0.5em;
 }
 
 .indent {
@@ -57,25 +51,17 @@
   text-align: center;
 }
 
-lh {
+.resume lh {
   font-size:1.2em;
   margin-bottom:5px;
   margin-left:-1.2em;
 }
 
-li {
+.resume li {
   margin:3px;
 }
 
-td {
-  width:3.5in;
-}
-
-th {
-  text-align:left;
-}
-
-h1,h2,h3 {
+.resume h1,h2,h3 {
   font-size: initial;
   margin-top:0.3em;
   margin-bottom:0.3em;
