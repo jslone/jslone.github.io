@@ -63,4 +63,17 @@
       </div>
     </div>
   </div>
+  <div class="row">
+    <div class="col l12">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title grey-text text-darken-4">Source</span>
+          <div class="text-center">
+            <a ng-if="game.source" href="{{game.source}}" class="wave-effects wave-light btn grey-text text-lighten-5">View on Github</a>
+            <a ng-if="!game.source" href="#" class="btn disabled grey-text">Unavailable</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

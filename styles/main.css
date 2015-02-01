@@ -9,6 +9,10 @@ html,body {
   justify-content: space-between;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .icons {
   /*color: white;*/
   font-size:2em;

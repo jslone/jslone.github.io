@@ -80,7 +80,8 @@ angular.module('portfolioApp')
             role: 'Asset Pipeline Management, Tile Design'
           }
         ]
-      }
+      },
+      source: 'https://github.com/jslone/APlugsLife'
     }
   ];
 
