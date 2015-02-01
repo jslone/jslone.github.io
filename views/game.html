@@ -61,9 +61,31 @@
                     <span class="card-title grey-text text-darken-4">{{member.name}}</span>
                     <p>{{member.role}}</p>
                   </div>
+                  <div ng-if="member.link" class="card-action">
+                    <a href="{{member.link}}">More Info</a>
+                  </div>
                 </div>
               </div>
             </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- TOOLS -->
+  <div ng-if="game.tools" class="row">
+    <div class="col l12">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title grey-text text-darken-4">Tools</span>
+          <div class="row">
+            <div ng-repeat="tool in game.tools" class="col l4">
+              <div ng-if="tool.logo" class="card-image">
+                <a href="{{tool.link}}">
+                  <img ng-src="{{tool.logo}}">
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

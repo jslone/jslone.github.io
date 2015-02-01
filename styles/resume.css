@@ -1,8 +1,9 @@
 .page-container {
-  width:9in;
-  height:11.5in;
+  max-width:9in;
+  max-height:11.5in;
   padding:0.25in;
   margin:auto;
+  overflow: scroll;
 }
 
 .resume {
