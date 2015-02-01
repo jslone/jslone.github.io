@@ -1,0 +1,98 @@
+.page {
+  width: 8.5in;
+  height: 11in;
+  background-color:white;
+  font-size:0.7em;
+  overflow: hidden;
+}
+
+.container {
+  margin-top:1em;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.third > * {
+  width:33%;
+}
+
+.half > * {
+  width:50%;
+}
+
+.quarter > * {
+  width:25%;
+}
+
+.inline-full {
+  display: table;
+  width: 100%;
+}
+
+.inline > div, .inline-full > div {
+  display: inline-table;
+  max-width:3.5in;
+  padding:0.5em;
+}
+
+.indent {
+  margin-left: 0.5in;
+}
+
+.right {
+  float: right;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+
+lh {
+  font-size:1.2em;
+  margin-bottom:5px;
+  margin-left:-1.2em;
+}
+
+li {
+  margin:3px;
+}
+
+td {
+  width:3.5in;
+}
+
+th {
+  text-align:left;
+}
+
+h1,h2,h3 {
+  font-size: initial;
+  margin-top:0.3em;
+  margin-bottom:0.3em;
+  line-height: initial;
+  font-weight: initial;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .printable, .printable * {
+    visibility: visible;
+  }
+  .printable {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
