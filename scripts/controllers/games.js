@@ -232,6 +232,12 @@ angular.module('portfolioApp')
       thumbnail: '',
       header: '',
       screenshots: false,
+      builds: [
+        {
+          platform: 'html5',
+          link: 'https://ultttt.herokuapp.com/'
+        }
+      ],
       tools: [
         {
           name: 'AngularJS',
