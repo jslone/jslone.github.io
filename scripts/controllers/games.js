@@ -15,7 +15,7 @@ angular.module('portfolioApp')
       description: {
         short: 'A small platformer for GGJ 2015.',
         long: [
-            'A small platformer made by my team for the Global Game Jam 2015.',
+            'A small platformer made by my team for the 48 hour Global Game Jam 2015.',
             'We decided to remove the traditional mechanic of jumping and replace',
             'it with rotation. Players rotate the entire world in order to navigate',
             'labyrinths and solve puzzles, as well as challenge their own spatial',

@@ -1,9 +1,11 @@
 <div class="container">
+  <!-- HEADER -->
   <div class="row">
     <div class="col l12">
       <img-mat src="{{game.header}}">
     </div>
   </div>
+  <!-- OVERVIEW -->
   <div class="row">
     <div class="col l12">
       <div class="card">
@@ -14,7 +16,8 @@
       </div>
     </div>
   </div>
-  <div class="row">
+  <!-- SCREENSHOTS -->
+  <div ng-if="game.screenshots" class="row">
     <div class="col l12">
       <div class="card">
         <div class="card-content">
@@ -28,7 +31,8 @@
       </div>
     </div>
   </div>
-  <div class="row">
+  <!-- DOWNLOADS -->
+  <div ng-if="game.builds" class="row">
     <div class="col l12">
       <div class="card">
         <div class="card-content">
@@ -40,7 +44,8 @@
       </div>
     </div>
   </div>
-  <div class="row">
+  <!-- TEAM -->
+  <div ng-if="game.team" class="row">
     <div class="col l12">
       <div class="card">
         <div class="card-content">
@@ -63,6 +68,7 @@
       </div>
     </div>
   </div>
+  <!-- SOURCE -->
   <div class="row">
     <div class="col l12">
       <div class="card">
