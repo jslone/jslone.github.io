@@ -20,10 +20,6 @@ angular
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
@@ -42,6 +38,8 @@ angular
         css: 'styles/games.css'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/games'
       });
   });
+
+$(".button-collapse").sideNav();
