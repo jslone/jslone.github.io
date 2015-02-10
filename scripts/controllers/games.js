@@ -110,7 +110,7 @@ angular.module('portfolioApp')
       builds: [
         {
           platform: 'android',
-          link: 'https://play.google.com/store/apps/details?id=com.gameclosure.bagger'
+          link: '#/game/1'
         }
       ],
       team: {

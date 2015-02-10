@@ -37,8 +37,17 @@ angular
         controller: 'GamesCtrl',
         css: 'styles/games.css'
       })
+      .when('/tools', {
+        templateUrl: 'views/tools.html',
+        controller: 'ToolsCtrl'
+      })
+      .when('/tools/:id', {
+        templateUrl: 'views/game.html',
+        controller: 'ToolsCtrl',
+        css: 'styles/games.css'
+      })
       .otherwise({
-        redirectTo: '/games'
+        redirectTo: '/about'
       });
   });
 

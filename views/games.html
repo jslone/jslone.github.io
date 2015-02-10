@@ -5,9 +5,9 @@
         <div ng-if="game.thumbnail" class="card-image">
           <img ng-src="{{game.thumbnail}}">
         </div>
-        <span ng-if="!game.thumbnail" class="card-title grey-text text-darken-4">{{game.name}}</span>
         <div class="card-content">
-          {{game.description.short || game.description}}
+          <span ng-if="!game.thumbnail" class="card-title grey-text text-darken-4">{{game.name}}</span>
+          <p>{{game.description.short || game.description}}</p>
         </div>
         <div class="card-action">
           <a href="#/game/{{$index}}">More info</a>
