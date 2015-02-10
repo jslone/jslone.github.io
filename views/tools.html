@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div ng-repeat="game in games" class="col s12 m6 l4">
+      <div class="card">
+        <div ng-if="game.thumbnail" class="card-image">
+          <img ng-src="{{game.thumbnail}}">
+        </div>
+        <div class="card-content">
+          <span ng-if="!game.thumbnail" class="card-title grey-text text-darken-4">{{game.name}}</span>
+          <p>{{game.description.short || game.description}}</p>
+        </div>
+        <div class="card-action">
+          <a href="#/tools/{{$index}}">More info</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
