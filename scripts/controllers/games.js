@@ -202,19 +202,19 @@ angular.module('portfolioApp')
       header: 'images/games/feuds/screenshot0.png',
       screenshots: [
         'images/games/feuds/screenshot0.png',
-        'images/games/feuds/screenshot13.png',
-        'images/games/feuds/screenshot23.png',
-        'images/games/feuds/screenshot28.png',
-        'images/games/feuds/screenshot30.png',
-        'images/games/feuds/screenshot35.png',
-        'images/games/feuds/screenshot7.png',
         'images/games/feuds/screenshot1.png',
-        'images/games/feuds/screenshot17.png',
-        'images/games/feuds/screenshot24.png',
-        'images/games/feuds/screenshot29.png',
-        'images/games/feuds/screenshot33.png',
         'images/games/feuds/screenshot6.png',
-        'images/games/feuds/screenshot8.png'
+        'images/games/feuds/screenshot7.png',
+        'images/games/feuds/screenshot8.png',
+        'images/games/feuds/screenshot13.png',
+        'images/games/feuds/screenshot17.png',
+        'images/games/feuds/screenshot23.png',
+        'images/games/feuds/screenshot24.png',
+        'images/games/feuds/screenshot28.png',
+        'images/games/feuds/screenshot29.png',
+        'images/games/feuds/screenshot30.png',
+        'images/games/feuds/screenshot33.png',
+        'images/games/feuds/screenshot35.png'
       ],
       builds: [
         {
@@ -257,6 +257,72 @@ angular.module('portfolioApp')
         }
       ],
       source: 'https://github.com/paulaluri/Feuds'
+    },
+
+    /********************************
+    ** Sudokis
+    **********************************/
+    {
+      name: 'Sudokis',
+      description: {
+        short: 'A fun fusion of tetris and sudoku.',
+        long: [
+          'Made as part of a class project to modify an existing game,',
+          'Sudokis combines the puzzle aspects of Tetris and Sudoku into',
+          'a fun puzzle game with short game loops perfect for mobile.'
+        ].join(' ')
+      },
+      thumbnail: 'images/games/sudokis/banner.png',
+      header: 'images/games/sudokis/banner.png',
+      screenshots: [
+        'images/games/sudokis/screenshot0.png',
+        'images/games/sudokis/screenshot1.png',
+        'images/games/sudokis/screenshot3.png',
+        'images/games/sudokis/screenshot8.png',
+        'images/games/sudokis/screenshot27.png',
+        'images/games/sudokis/screenshot32.png',
+        'images/games/sudokis/screenshot43.png',
+        'images/games/sudokis/screenshot44.png'
+      ],
+      builds: [
+        {
+          platform: 'android',
+          link: 'https://play.google.com/store/apps/details?id=com.badassbardgames.tridoku'
+        }
+      ],
+      team: {
+        name: 'Badass Bard Games',
+        members: [
+          {
+            name: 'Diana Zhu',
+            role: 'Production, Art'
+          },
+          {
+            name: 'Sylvia Kosowski',
+            role: 'Programming - (Tetris Piece Splicing)'
+          },
+          {
+            name: 'Ivan Wang',
+            role: 'Sound Design'
+          },
+          {
+            name: 'Jacob Slone',
+            role: 'Programming - (Gameplay, Utilities)'
+          },
+          {
+            name: 'Wole Idowu',
+            role: 'Design'
+          }
+        ]
+      },
+      tools: [
+        {
+          name: 'Unity',
+          logo: 'images/tools/unity-logo.png',
+          link: 'http://unity3d.com/'
+        }
+      ],
+      source: 'https://github.com/jslone/tetroku'
     },
 
     /********************************
