@@ -104,13 +104,20 @@ angular.module('portfolioApp')
         short: 'Small mobile physics game made in a weekend.',
         long: 'Small mobile physics game made in a weekend.'
       },
-      thumbnail: '',
-      header: '',
-      screenshots: false,
+      thumbnail: 'images/games/bagger/feature.png',
+      header: 'images/games/bagger/feature.png',
+      screenshots: [
+        'images/games/bagger/screenshot0.png',
+        'images/games/bagger/screenshot1.png',
+        'images/games/bagger/screenshot2.png',
+        'images/games/bagger/screenshot3.png',
+        'images/games/bagger/screenshot4.png',
+        'images/games/bagger/screenshot5.png'
+      ],
       builds: [
         {
           platform: 'android',
-          link: '#/game/1'
+          link: 'https://play.google.com/store/apps/details?id=com.slogames.bagger'
         }
       ],
       team: {
@@ -142,7 +149,8 @@ angular.module('portfolioApp')
           logo: 'images/tools/game-closure.png',
           link: 'http://www.gameclosure.com/'
         }
-      ]
+      ],
+      source: 'https://github.com/jslone/Bagger'
     },
 
     /***********************************
@@ -187,9 +195,41 @@ angular.module('portfolioApp')
         short: '2 player round based action RTS.',
         long: '2 player round based action RTS.'
       },
-      thumbnail: '',
-      header: '',
-      screenshots: false,
+      thumbnail: 'images/games/feuds/screenshot0.png',
+      header: 'images/games/feuds/screenshot0.png',
+      screenshots: [
+        'images/games/feuds/screenshot0.png',
+        'images/games/feuds/screenshot13.png',
+        'images/games/feuds/screenshot23.png',
+        'images/games/feuds/screenshot28.png',
+        'images/games/feuds/screenshot30.png',
+        'images/games/feuds/screenshot35.png',
+        'images/games/feuds/screenshot7.png',
+        'images/games/feuds/screenshot1.png',
+        'images/games/feuds/screenshot17.png',
+        'images/games/feuds/screenshot24.png',
+        'images/games/feuds/screenshot29.png',
+        'images/games/feuds/screenshot33.png',
+        'images/games/feuds/screenshot6.png',
+        'images/games/feuds/screenshot8.png'
+      ],
+      builds: [
+        {
+          platform: 'windows',
+          link: 'builds/games/feuds/windows.zip',
+          dowload: true
+        },
+        {
+          platform: 'apple',
+          link: 'builds/games/feuds/macosx.zip',
+          dowload: true
+        },
+        {
+          platform: 'linux',
+          link: 'builds/games/feuds/linux.zip',
+          dowload: true
+        }
+      ],
       team: {
         members: [
           {
