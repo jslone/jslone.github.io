@@ -162,9 +162,12 @@ angular.module('portfolioApp')
         short: 'Cute metrovania game featuring a heroic cow, early in development.',
         long: 'Cute metrovania game featuring a heroic cow, early in development.'
       },
-      thumbnail: '',
-      header: '',
-      screenshots: false,
+      thumbnail: 'images/games/botb/screenshot0.png',
+      header: 'images/games/botb/screenshot0.png',
+      screenshots: [
+        'images/games/botb/screenshot0.png',
+        'images/games/botb/screenshot2.png'
+      ],
       team: {
         members: [
           {
